@@ -22,5 +22,11 @@ jobs:
       with:
         node-version: latest
 
+    - name: Install dependencies
+      uses: npm ci
+
+    - name: Run tests
+      uses: npm test
+
     - name: Print a message
       run: echo "Hello, world!"
